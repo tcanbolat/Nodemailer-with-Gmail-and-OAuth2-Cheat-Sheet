@@ -144,7 +144,7 @@ ___
 ___
 
 
-<li>To the right, in the input filed add in "https://www.googleapis.com/auth/gmail.send" and click Authorize API's</li>
+<li>To the left, in the input filed add in "https://www.googleapis.com/auth/gmail.send" and click Authorize API's</li>
 <li>this will only allow the app to send emails and nothing else</li>
 <li>When you get redirected if the pop up asks what account you want to use, choose the one that you want to send emails with, if not then that means you only have one google account</li>
   
