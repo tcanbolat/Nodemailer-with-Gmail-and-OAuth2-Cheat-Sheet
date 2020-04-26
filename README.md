@@ -6,15 +6,15 @@
 
 <p align="center" >
   <a href="https://nodemailer.com/about/">
-    <img height="100px" width="100px" src="nodeMailer.png" alt="nodeMailer">
+    <img height="100px" width="100px" src="logos/nodeMailer.png" alt="nodeMailer">
   </a>
-  <img height="80px" width="80px" src="plusSign.png"/>
+  <img height="80px" width="80px" src="logos/plusSign.png"/>
   <a href="https://Gmail.com">
-    <img height="100px" width="100px" src="Gmail.png" alt="Gmail">
+    <img height="100px" width="100px" src="logos/Gmail.png" alt="Gmail">
   </a>
-  <img height="80px" width="80px" src="plusSign.png"/>
+  <img height="80px" width="80px" src="logos/plusSign.png"/>
   <a href="https://oauth.net/2/">
-    <img height="120px" width="120px" src="imageedit_1_3752143845.png" alt="OAuth2">
+    <img height="120px" width="120px" src="logos/imageedit_1_3752143845.png" alt="OAuth2">
   </a>
 </p>
 <br/>
@@ -40,23 +40,24 @@ ___
 - npm install
 ```
 <strong>OR</strong>
+<strong>create a new folder</strong>
 ```
+- touch app.js
 - npm init
 - npm install nodemailer
-- touch app.js
 ```
-<strong>within app.js lets add the dependencies</strong>
+<strong>within app.js add the dependencies.</strong>
 ```javaScript
 const nodemailer = require("nodemailer");
 ```
-<strong>next create a output variable that will contain our message</strong>
+<strong>next create a output variable that will contain your message.</strong>
 ```javaScript
 const output = `
   <h1>New Messsage!<h1>
   <p>I hope this works.</p>
 `;
 ```
-<strong>Now create the transporter function</strong>
+<strong>Now create the transporter function.</strong>
 <strong>This function is where you will add in your OAuth2 credentials further down.</strong>
 
 ```javaScript
@@ -75,7 +76,7 @@ let transporter = nodemailer.createTransport({
 });
 ```
 
-<strong>in the same file under the transporter function, create a mailOptions variable</strong>
+<strong>in the same file under the transporter function, create a mailOptions variable.</strong>
 
 ```javaScript
 let mailOptions = {
@@ -116,7 +117,7 @@ ___
 
 <li>You will then be redirected back to the dashboard, under the API card, click on "Go to API's overview"</li>
 <li>To the left of the screen, click on "OAuth consent screen"</li>
-<li>Click on external, then add in you app name again in the input field, THEN click the blue save button at the bottom of the page.</li>
+<li>Click on external, then add in you app name again in the input field, THEN click the blue save button at the bottom of the page</li>
   
 ___
 
@@ -129,7 +130,7 @@ ___
 ___
 
 
-<li>You will be redirected to a pop up that has your client ID and client secret.</li>
+<li>You will be redirected to a pop up that has your client ID and client secret</li>
 <li>Add these credentials to your transporter function!</li>
   
 ___
@@ -152,7 +153,7 @@ ___
 
 <li>You will then see a pop up with a red ALERT!, this is only asking if we want the app to access our gmail account</li>
 <li>Just click on Advanced to the left, and click on the very bottom link that has your appname(unsafe)
-<li>Dont worry, its only alerting you because google hasn't verified your app that you just created in google developers</pli
+<li>Dont worry, its only alerting you because google hasn't verified your app that you just created in google developers</li>
 <li>Click on allow and you will be redirected back to the OAuth screen</li>
   
 ___
