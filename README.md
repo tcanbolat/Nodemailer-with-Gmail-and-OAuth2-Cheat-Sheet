@@ -104,7 +104,7 @@ ___
 
 
 <h2 align="center">Part Two</h2>
-<p align="center">Obtain OAuth credentials</p>
+<p align="center">Obtain OAuth2 credentials</p>
 
 <ul>
 <li>head on over to: https://console.developers.google.com/</li>
@@ -159,7 +159,7 @@ ___
 ___
 
 
-<li>Here, click on the "Exchange authorization code for tokens" and your tokens will be generated below<li>
+<li>Here, click on the "Exchange authorization code for tokens" and your tokens will be generated below</li>
 <li>It might automatically switch to the next tab, if so just click on the earlier tab for Exchange Authorization tokens</li>
   
 ___
