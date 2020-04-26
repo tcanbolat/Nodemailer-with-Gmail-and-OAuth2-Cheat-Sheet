@@ -1,4 +1,5 @@
 <h1 align="center">Nodemailer-with-Gmail-and-OAuth2-Cheat-Sheet</h1>
+<p align="center">@tcanbolat</p>
 
 <p align="center">This App demonstrates how to set up Nodemailer using Gmail &amp; OAuth2.</p>
 <p align="center">I built this tutorial since I ran into a lot of errors when first using nodeMailer with Gmail.</p>
@@ -124,7 +125,7 @@ ___
 
 <li>To the left of the screen, click on credentials</li>
 <li>Then, click on "+ CREATE CREDENTIALS" and select "OAuth client ID"</li>
-<li>Choose Web Application, THEN! in the "Authorized redirect URIs" input filed add in this link: https://developers.google.com/oauthplayground</li>
+<li>Choose Web Application, THEN! in the "Authorized redirect URIs" input field copy/paste this link: https://developers.google.com/oauthplayground </li>
 <li>Click on create, might have to click twice"</li>
   
 ___
@@ -191,9 +192,35 @@ ___
 ___
 
 
+<p>If you enjoyed this tutorial, please star my repo so others can come across this tutorial as well.</p>
+<p>Most of the tutorials Iv'e come across were either outdated or simply did not work.</p>
+<p>@tcanbolat</p>
+
+
+___
+___
+
 
 <h2>ADVICE!</h2>
 <h4>Make sure to hide your OAuth2 credentials before you push your code to GitHub or anywhere else.<h4>
 <h4>Look up "dotenv" npm module to hide your variables locally. https://www.npmjs.com/package/dotenv<h4>
   
-@tcanbolat
+
+<h2>Troubleshooting</h2>
+<p>If you still running into trouble, try some of these steps<p>
+<ol>
+  <li>Go to https://accounts.google.com/b/0/DisplayUnlockCaptcha and click on continue. then go back and try sending the email through         your app again, at least twice.
+  </li>
+  <li>You can also allow more access to your app, earlier we copy/pasted https://www.googleapis.com/auth/gmail.send so that we could allow the app to send emails using our google credentails. Instead go back and change it to https://www.googleapis.com/auth/gmail. This will give your app more access to your gmail and maybe solve your error.
+  </li>
+  <li>If your getting an error about your login being invalid, Your Gmail password might be to weak for OAuth2 and its not letting you go through. Try changing your password and it might solve the issue. (this fixed my issue).
+  </li>
+  <li>You can also try allowing less secure apps to access your google account, but that would defeat the purpose of OAuth2 and leave you potentially vulnerable. If you want to test it out, go over to https://myaccount.google.com/lesssecureapps and toggle to allow.
+  </li>
+</ol>
+
+___
+___
+
+<h5>Written by Abdullah Canbolat<h5>
+<h5>https://github.com/tcanbolat<h5>
