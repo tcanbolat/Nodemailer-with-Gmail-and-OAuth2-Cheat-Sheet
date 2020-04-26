@@ -115,7 +115,7 @@ ___
 ___
 
 
-<li>You will then be redirected back to the dashboard, under the API card, click on "Go to API's overview"</li>
+<li>You will then be redirected back to the dashboard"</li>
 <li>To the left of the screen, click on "OAuth consent screen"</li>
 <li>Click on external, then add in you app name again in the input field, THEN click the blue save button at the bottom of the page</li>
   
