@@ -193,7 +193,6 @@ ___
 
 
 <p>If you enjoyed this tutorial, please star the repo so others can come across this tutorial as well.</p>
-<p>Most of the Gmail + OAuth2 tutorials I have come across were either outdated or simply did not work.</p>
 <p>@tcanbolat</p>
 
 
