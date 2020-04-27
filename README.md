@@ -116,7 +116,7 @@ ___
 ___
 
 
-<li>You will then be redirected back to the dashboard"</li>
+<li>You will then be redirected back to the dashboard</li>
 <li>To the left of the screen, click on "OAuth consent screen"</li>
 <li>Click on external, then add in you app name again in the input field, THEN click the blue save button at the bottom of the page</li>
   
@@ -147,14 +147,14 @@ ___
 
 <li>To the left, in the input filed add in "https://www.googleapis.com/auth/gmail.send" and click Authorize API's</li>
 <li>this will only allow the app to send emails and nothing else</li>
-<li>When you get redirected if the pop up asks what account you want to use, choose the one that you want to send emails with, if not then that means you only have one google account</li>
+<li>When you get redirected if the pop up asks what account you want to use, choose the one that you want to send emails with, if not then that means you only have one google account setup on your machine.</li>
   
 ___
 
 
 <li>You will then see a pop up with a red ALERT!, this is only asking if we want the app to access our gmail account</li>
 <li>Just click on Advanced to the left, and click on the very bottom link that has your appname(unsafe)
-<li>Dont worry, its only alerting you because google hasn't verified your app that you just created in google developers</li>
+<li>Dont worry, its only alerting you because google hasn't verified your app that you just created in developers.google</li>
 <li>Click on allow and you will be redirected back to the OAuth screen</li>
   
 ___
@@ -167,7 +167,7 @@ ___
 
 
 <li>Now, take the access token and the refresh token and add them to your transporter function</li>
-<li>Congrats! You just created an app in your google developers profile that allows access to your gmail to send emails!</li>
+<li>Congrats! Your app is all set up to start sending emails using OAuth2!</li>
 </ul>
 
 
@@ -192,8 +192,8 @@ ___
 ___
 
 
-<p>If you enjoyed this tutorial, please star my repo so others can come across this tutorial as well.</p>
-<p>Most of the tutorials Iv'e come across were either outdated or simply did not work.</p>
+<p>If you enjoyed this tutorial, please star the repo so others can come across this tutorial as well.</p>
+<p>Most of the Gmail + OAuth2 tutorials I have come across were either outdated or simply did not work.</p>
 <p>@tcanbolat</p>
 
 
@@ -207,7 +207,7 @@ ___
   
 
 <h2>Troubleshooting</h2>
-<p>If you still running into trouble, try some of these steps<p>
+<p>If your still running into trouble, try some of these steps<p>
 <ol>
   <li>Go to https://accounts.google.com/b/0/DisplayUnlockCaptcha and click on continue. then go back and try sending the email through         your app again, at least twice.
   </li>
