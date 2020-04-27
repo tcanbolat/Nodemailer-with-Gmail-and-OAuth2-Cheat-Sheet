@@ -191,8 +191,8 @@ node app.js
 ___
 ___
 
-
-<p>If you enjoyed this tutorial, please star the repo so others can come across this tutorial as well.</p>
+<p>Enjoy the tutorial?<p>
+<p>If so, please star the repo so others can come across this tutorial as well.</p>
 <p>@tcanbolat</p>
 
 
