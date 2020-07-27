@@ -1,5 +1,4 @@
 <h1 align="center">Nodemailer-with-Gmail-and-OAuth2-Cheat-Sheet</h1>
-<p align="center">@tcanbolat</p>
 
 <p align="center">This App demonstrates how to set up Nodemailer using Gmail &amp; OAuth2.</p>
 <p align="center">I built this tutorial since I ran into a lot of errors when first using nodeMailer with Gmail.</p>
@@ -68,11 +67,8 @@ let transporter = nodemailer.createTransport({
   secure: true,
   auth: {
    type: "OAuth2",    // defining the authentication type
-   user: "example@gmail.com",   // replace this with your google email
    clientId: "************",    // this will be obtained in part 2
-   clientSecret: "************",    // this will be obtained in part 2
-   refreshToken: "************",    // this will be obtained in part 2 
-   accessToken: "************",    // this will be obtained in part 2      
+   clientSecret: "************",    // this will be obtained in part 2     
   },
 });
 ```
@@ -85,6 +81,12 @@ let mailOptions = {
   to: "example@gmail.com",    // Use your same googele email ("send yourself an email") to test if the app works.
   subject: "Testing123...",   // change the subject to whatever you like.
   html: output,   // this is the output variable defined earlier that contains our message.
+  auth: {
+   user: "example@gmail.com",   // replace this with your google email
+   refreshToken: "************",    // this will be obtained in part 2 
+   accessToken: "************",    // this will be obtained in part 2 
+   expires: new Date().getTime(),  // this will request a new token each time so that it never expires. google allows up to 10,000 requests per day for free.
+  },
 };
 ```
 
@@ -187,14 +189,6 @@ node app.js
 
 <p>You should now see an error or a confirmation in the terminal.</p>
 <p>If you got a Confirmation, go on over to your Gmail inbox and you should see the email that your app just sent.<p>
-
-___
-___
-
-<p>Enjoy the tutorial?<p>
-<p>If so, please star the repo so others can come across this tutorial as well.</p>
-<p>@tcanbolat</p>
-
 
 ___
 ___
