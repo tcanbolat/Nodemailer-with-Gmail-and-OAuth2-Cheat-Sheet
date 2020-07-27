@@ -11,12 +11,8 @@ let transporter = nodemailer.createTransport({
     secure: true,
     auth: {
      type: "OAuth2",    // defining the authentication type
-     user: "example@gmail.com",   // replace this with your google email
      clientId: "************",    // this will be obtained in part 2
      clientSecret: "************",    // this will be obtained in part 2
-     refreshToken: "************",    // this will be obtained in part 2 
-     accessToken: "************",    // this will be obtained in part 2      
-    },
   });
   
   let mailOptions = {
@@ -24,6 +20,12 @@ let transporter = nodemailer.createTransport({
     to: "example@gmail.com",    // Use your same googele email ("send yourself an email") to test if the app works.
     subject: "Testing123...",   // change the subject to whatever you like.
     html: output,   // this is the output variable defined earlier that contains our message.
+    auth: {
+     user: "example@gmail.com",   // replace this with your google email
+     refreshToken: "************",    // this will be obtained in part 2 
+     accessToken: "************",    // this will be obtained in part 2 
+     expires: new Date().getTime(),  // this will request a new token each time so that it never expires. google allows up to 10,000 requests per day for free.
+   },
   };
 
   transporter.sendMail(mailOptions, (error, info) => {  
