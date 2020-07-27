@@ -1,8 +1,6 @@
 <h1 align="center">Nodemailer-with-Gmail-and-OAuth2-Cheat-Sheet</h1>
 
 <p align="center">This App demonstrates how to set up Nodemailer using Gmail &amp; OAuth2.</p>
-<p align="center">I built this tutorial since I ran into a lot of errors when first using nodeMailer with Gmail.</p>
-
 
 <p align="center" >
   <a href="https://nodemailer.com/about/">
