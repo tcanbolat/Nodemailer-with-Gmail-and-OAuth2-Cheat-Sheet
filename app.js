@@ -13,6 +13,7 @@ let transporter = nodemailer.createTransport({
      type: "OAuth2",    // defining the authentication type
      clientId: "************",    // this will be obtained in part 2
      clientSecret: "************",    // this will be obtained in part 2
+    }
   });
   
   let mailOptions = {
